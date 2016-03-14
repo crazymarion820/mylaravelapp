@@ -8,6 +8,7 @@
 </head>
 <body>
 <div class="container">
+    @yield('header-nav-bar')
     @yield('content')
     @yield('footer')
 </div>
