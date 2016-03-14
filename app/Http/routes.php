@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'JobsController@index');
+Route::get('/home', 'JobsController@index');
+Route::get('/jobs', 'JobsController@index');
+
+Route::controllers([
+    'auth' => 'Auth\AuthController',
+    'password' => 'Auth\PasswordController'
+]);

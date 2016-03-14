@@ -1,5 +1,5 @@
 @extends('layout.main')
 @section('content')
-    <h1>My({{ $user->name }}) Jobs:</h1>
+    <h1>Jobs of {{ $user->name }}</h1>
     <hr>
 @stop

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Laravel Crazy Site</title>
+    <title>My Laravel App</title>
     <!-- Twitter Bootstrap -->
     <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 </head>

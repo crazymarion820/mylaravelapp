@@ -35,19 +35,16 @@
 
                             <div class="form-group">
                                 <div class="col-md-6 col-md-offset-4">
-                                    <div class="checkbox">
-                                        <label><input type="checkbox"> Remember me</label>
-                                    </div>
+                                    <button type="submit" class="btn btn-primary">
+                                        Login
+                                    </button>
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <div class="col-md-6 col-md-offset-4">
-                                    <button type="submit" class="btn btn-primary">
-                                        Login
-                                    </button>
-                                    <a href="#">
-                                        Forgot Your Password?
+                                    <a href="/auth/register">
+                                        Create New Account
                                     </a>
                                 </div>
                             </div>
