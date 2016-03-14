@@ -20,4 +20,10 @@ class JobsController extends Controller
         $user = Auth::user();
         return view('jobs.index', compact('user'));
     }
+
+    public function create()
+    {
+        $user = Auth::user();
+        return view('jobs.create', compact('user'));
+    }
 }
