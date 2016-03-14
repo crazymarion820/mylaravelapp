@@ -15,6 +15,7 @@ Route::get('/', 'JobsController@index');
 Route::get('/home', 'JobsController@index');
 Route::get('/jobs', 'JobsController@index');
 Route::get('/jobs/create', 'JobsController@create');
+Route::post('/jobs/store', 'JobsController@store');
 
 Route::controllers([
     'auth' => 'Auth\AuthController',

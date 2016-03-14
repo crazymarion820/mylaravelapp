@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Job;
+use Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
@@ -18,12 +19,20 @@ class JobsController extends Controller
     public function index()
     {
         $user = Auth::user();
-        return view('jobs.index', compact('user'));
+        $jobs = Job::all();
+        return view('jobs.index', compact('jobs', 'user'));
     }
 
     public function create()
     {
         $user = Auth::user();
         return view('jobs.create', compact('user'));
+    }
+
+    public function store()
+    {
+        $job = new Job(Request::all());
+        Auth::user()->jobs()->save($job);
+        return redirect('jobs');
     }
 }

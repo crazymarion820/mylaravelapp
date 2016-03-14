@@ -12,4 +12,13 @@
             </a>
         </div>
     </div>
+
+    @foreach($jobs as $job)
+        <article>
+            <h3>
+                {{ $job->name }}
+            </h3>
+            <p>{{ $job->duration }}min   |    ${{ $job->cost }}</p>
+        </article>
+    @endforeach
 @stop

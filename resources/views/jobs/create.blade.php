@@ -24,21 +24,21 @@
                             <div class="form-group">
                                 <label class="col-md-4 control-label">Job Name</label>
                                 <div class="col-md-6">
-                                    <input type="email" class="form-control" name="name" value="">
+                                    <input type="text" class="form-control" name="name" value="">
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <label class="col-md-4 control-label">Duration</label>
                                 <div class="col-md-6">
-                                    <input type="password" class="form-control" name="duration">
+                                    <input type="text" class="form-control" name="duration">
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <label class="col-md-4 control-label">Cost</label>
                                 <div class="col-md-6">
-                                    <input type="password" class="form-control" name="cost">
+                                    <input type="text" class="form-control" name="cost">
                                 </div>
                             </div>
 
