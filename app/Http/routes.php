@@ -21,3 +21,9 @@ Route::controllers([
     'auth' => 'Auth\AuthController',
     'password' => 'Auth\PasswordController'
 ]);
+
+Route::group(['prefix' => 'api'], function()
+{
+    Route::resource('authenticate', 'JWTAuthenticateController', ['only' => ['index']]);
+    Route::post('authenticate', 'JWTAuthenticateController@authenticate');
+});
