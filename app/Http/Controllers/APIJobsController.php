@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Job;
-use Illuminate\Http\Request;
+use Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
@@ -24,6 +24,8 @@ class APIJobsController extends Controller
 
     public function store()
     {
-
+        $user = JWTAuthenticateController::getJWTAuthenticatedUser();
+        $job = new Job(Request::all());
+        return $user->jobs()->save($job);
     }
 }
