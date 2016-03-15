@@ -19,7 +19,7 @@ class JobsController extends Controller
     public function index()
     {
         $user = Auth::user();
-        $jobs = Job::all();
+        $jobs = Job::where('user_id', '=', $user->id)->get();
         return view('jobs.index', compact('jobs', 'user'));
     }
 

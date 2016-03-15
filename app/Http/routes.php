@@ -27,4 +27,5 @@ Route::group(['prefix' => 'api'], function()
     Route::resource('authenticate', 'JWTAuthenticateController', ['only' => ['index']]);
     Route::post('authenticate', 'JWTAuthenticateController@authenticate');
     Route::get('authenticate/user', 'JWTAuthenticateController@getAuthenticatedUser');
+    Route::resource('jobs', 'APIJobsController');
 });
